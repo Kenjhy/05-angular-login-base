@@ -1,0 +1,14 @@
+.imgStyle {
+
+      padding: 30px;
+      /* background-color: #C37500; */
+      behavior: url(/css/border-radius.htc);
+    border-radius: 20px;
+      }
+  
+  .showcase-menu-social img:hover {
+    background-color:navy;
+    opacity:0.7 !important;
+    filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+    box-shadow: 0 0 0px #000000 !important;
+  }

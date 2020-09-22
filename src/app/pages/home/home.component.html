@@ -1,0 +1,57 @@
+<div class="clearfix m-5">
+  <h1 class=" float-left">Menu</h1>
+  <button type="button" class="btn btn-outline-warning float-right" (click)="salir()">
+    Salir
+  </button>
+</div>
+<!-- <div class="m-5">
+  <h1>Mi aplicacion secreta</h1>
+  
+
+  <button class="btn btn-outline-danger" (click)="salir()">
+    Salir
+  </button>
+</div>
+<hr> -->
+
+<!-- Page Features -->
+<div class="row text-center">
+
+  <div class="col-lg-3 col-md-6 mb-4 showcase-menu-social">
+    <div class="card text-white  mb-3" style="max-width: 18rem;">
+      <img class="card-img-top imgStyle" src="../../../assets/images/home/Creación Delegados.png"  alt="Creación Delegados">
+    </div>
+  </div>
+
+  <div *ngIf="mostrarCeremoniaApertura==true" class="col-lg-3 col-md-6 mb-4 showcase-menu-social" >
+    <div class="card text-white mb-3" style="max-width: 18rem;">
+      <img class="card-img-top imgStyle" src="../../../assets/images/home/Ceremonia de Apertura.png" alt="Ceremonia de Apertura">
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4 showcase-menu-social">
+    <div *ngIf="mostrarCeremoniaCierre==true" class="card text-white mb-3">
+      <img class="card-img-top imgStyle" src="../../../assets/images/home/Ceremonia de Cierre.png" alt="Ceremonia de Cierre">
+    </div>
+  </div>
+
+  <div *ngIf="mostrarAperturaVotaciones==true" class="col-lg-3 col-md-6 mb-4 showcase-menu-social">
+    <div class="card text-white mb-3">
+      <img class="card-img-top imgStyle" src="../../../assets/images/home/Apertura de Votaciones.png" alt="Apertura de Votaciones">
+    </div>
+  </div>
+
+  <div *ngIf="mostrarCierreVotaciones" class="col-lg-3 col-md-6 mb-4 showcase-menu-social">
+    <div class="card text-white mb-3">
+      <img class="card-img-top imgStyle" src="../../../assets/images/home/Cierre Votaciones.png" alt="Cierre Votaciones">
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4 showcase-menu-social">
+    <div class="card text-white mb-3">
+      <img class="card-img-top imgStyle" src="../../../assets/images/home/Resultados.png" alt="Resultados">
+    </div>
+  </div>
+
+</div>
+<!-- /.row -->
